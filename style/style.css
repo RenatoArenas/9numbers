@@ -10,8 +10,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
+    margin-top: 10px;
     border: 1px solid black;
 }
 .number {
@@ -22,4 +23,21 @@ main {
     height: calc(100% / 3);
     border: 1px solid black;
     font-size: 3rem;
+}
+.number-button {
+    display: block;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid black;
+    width: 200px;
+    height: 45px;
+    font-size: 1rem;
+}
+@media only screen and (min-width: 600px) {
+    .number-container {
+        width: 60%;
+    }
+    .number-button {
+        margin: 40px auto;
+    }
 }
